@@ -9,7 +9,11 @@ jobs:
   whatever_we_want:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Greeting
+      - name: Checkout some code
+        uses: actions/checkout@v4.1.2
+        with:
+          fetch-depth: 0
+      
         run: echo "Hello Steve & Varshni"
       - name: Say Goodbye
         run: echo "All done"
