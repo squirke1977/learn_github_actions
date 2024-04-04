@@ -1,4 +1,15 @@
-on:
+name: I cannot work workflows
+
+on: 
   push:
     branches:
       - main
+
+jobs:
+  whatever_we_want:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello Steve & Varshni"
+      - name: Say Goodbye
+        run: echo "All done"
